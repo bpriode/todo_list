@@ -1,0 +1,13 @@
+{{#todos}}
+
+  <form class="" action="/completed" method="post">
+   <input type="submit" name="button" value="{{.}}">
+  </form>
+
+{{/todos}}
+{{#completed}}
+  <form class="" action="/" method="post">
+    <input id="check" type="checkbox" checked value="{{.}}">
+    <del>{{.}}</del>
+  </form>
+{{/completed}}
