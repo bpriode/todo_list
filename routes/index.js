@@ -18,17 +18,10 @@ router.post("/list", function (req, res) {
 
 
 router.post("/completed", function (req, res) {
-    completed.push(req.body.button);
+
+    completed.push(todos.splice(todos.indexOf(req.body.button),1));
     res.redirect('/');
 });
-
-// completed = completed.filter(function(id){
-//   return completed.id !== id;
-// })
-
-
-
-
 
 
 module.exports = router;

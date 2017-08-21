@@ -17,10 +17,6 @@ app.use(expressValidator());
 
 app.use(express.static('./public'));
 
-
-
-
-
 app.use(routes);
 
 app.listen(3000, function() {
