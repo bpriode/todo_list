@@ -1,4 +1,4 @@
-<h1>Let's do this!</h1>
+
 {{#todos}}
 
   <form class="" action="/completed" method="post">
@@ -7,10 +7,14 @@
 
 {{/todos}}
 
-<h1>Yay! You've worked so hard!</h1>
+<br>
+<br>
+
+<h2>You've worked so hard!</h2>
+<h3>Look at all the things you've finished</h3>
 {{#completed}}
   <form class="" action="/" method="post">
-    <input id="check" type="checkbox" checked value="{{.}}">
-    <del>{{.}}</del>
+    <input type="submit" name="button" value="{{.}}">
+
   </form>
 {{/completed}}
